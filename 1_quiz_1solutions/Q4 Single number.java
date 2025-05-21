@@ -1,0 +1,26 @@
+import java.util.Arrays;
+
+class SingleNumber {
+
+    public int findSingleNumber(int[] nums) {
+        Arrays.sort(nums);
+
+        for (int i = 0; i < nums.length - 1; i += 2) {
+            if (nums[i] != nums[i + 1]) {
+                return nums[i];
+            }
+        }
+        return nums[nums.length - 1];
+    }
+
+    public static class  Main {
+        public static void main (String[]args){
+        int[] nums = {2, 3, 5, 7, 3, 8, 8, 2, 7, 7};
+
+        SingleNumber obj = new SingleNumber();
+        int singleNum = obj.findSingleNumber(nums);
+
+        System.out.println("Single number: " + singleNum);
+    }
+    }
+}
