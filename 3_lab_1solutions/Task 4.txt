@@ -1,0 +1,21 @@
+┌──────────────────────────────────────────────────────┐
+│List                                                  │
+├──────────────────────────────────────────────────────┤
+│+isEmpty(): Boolean                                   │
+│+size(): Integer                                      │
+│+add(element: T)                                      │
+│+add(index: Integer, element: T)                      │
+│+remove(element: T): Boolean                          │
+│+remove(index: Integer): T                            │
+│+get(index: Integer): T                               │
+│+set(index: Integer, element: T): T                   │
+│+indexOf(element: T): Integer                         │
+│+contains(element: T): Boolean                        │
+│+clear()                                              │
+│+toString(): String                                   │
+│-- Optional (depending on specific List variations) --│
+│+first(): T                                           │
+│+last(): T                                            │
+│+insertAfter(element: T, newElement: T): Boolean      │
+│+insertBefore(element: T, newElement: T): Boolean     │
+└──────────────────────────────────────────────────────┘
